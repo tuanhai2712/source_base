@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "react-app",
+    "prettier",
+    "eslint-config-prettier"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "eslint-plugin-prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-var": 2,
+    "prefer-const": 2,
+    "max-len": ["warn", {"code": 150, "ignoreUrls": true}],
+    "lines-around-comment": [
+      "warn",
+      {
+        "afterLineComment": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ]
+  }
+}

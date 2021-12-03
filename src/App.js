@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useSelector } from "react-redux";
+import { authSelector } from "@state/auth";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { privateRoutes, publicRoutes } from "./routeConfig";
+import Main from "./Main";
 function App() {
+  const { isAuthenticated } = useSelector(authSelector);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main />
+    // <BrowserRouter>
+    //   <Routes>
+    //     {publicRoutes.map((item, idx) => {
+    //       return (
+    //         <Route
+    //           key={idx}
+    //           path={item.path}
+    //           exact={item.exact}
+    //           component={item.component}
+    //         />
+    //       );
+    //     })}
+
+    //     {isAuthenticated && (
+    //       <Main
+    //         privateRoutes={privateRoutes}
+    //         isAuthenticated={isAuthenticated}
+    //       />
+    //     )}
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 
