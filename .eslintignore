@@ -1,2 +1,4 @@
-node_modules
-build
+/node_modules
+/src/serviceWorker.ts
+config-overrides.js
+/src/lib

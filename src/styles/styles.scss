@@ -1,0 +1,15 @@
+@import './fonts/font.scss';
+
+@import './settings/setting.breakpoint';
+@import './settings/setting.variables';
+@import './settings/setting.mixins';
+@import './settings/setting.functions';
+@import './settings/setting.default';
+
+@import './components/component.scss';
+
+@import './layouts/layouts.scss';
+
+@import './pages/pages.scss';
+
+@import './utilities/ant.scss';

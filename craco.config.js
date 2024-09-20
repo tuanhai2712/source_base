@@ -1,13 +1,35 @@
-const path = require("path");
+const path = require('path');
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig.paths.json');
+const CracoLessPlugin = require('craco-less');
 
 module.exports = {
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            modifyVars: { '@primary-color': '#DCF537', '@text-color': '#FCFCFD', '@border-radius-base': '8px' },
+            javascriptEnabled: true,
+          },
+        },
+      },
+    },
+  ],
+
   webpack: {
     alias: {
-      "@state": path.join(path.resolve(__dirname, "./src/state")),
-      "@assets": path.join(path.resolve(__dirname, "./src/assets")),
-      "@components": path.join(path.resolve(__dirname, "./src/components")),
-      "@pages": path.join(path.resolve(__dirname, "./src/pages")),
-      "@utils": path.join(path.resolve(__dirname, "./src/utils")),
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+
+  jest: {
+    configure: {
+      preset: 'ts-jest',
+      moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+        prefix: '<rootDir>/src/',
+      }),
     },
   },
 };

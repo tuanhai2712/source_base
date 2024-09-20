@@ -1,0 +1,111 @@
+/* ==========================================================================
+   # START VARIABLE SETTING
+   ==========================================================================
+*/
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1280px,
+  xl: 1400px,
+  xxl: 1600px,
+);
+
+$colors: (
+  primary: #dcf537,
+  background-primary: #101828,
+  background-secondary: #001529,
+  background-secondary-bold: #1a1a1a,
+  background-third: '#344054',
+  background-grey: '#f2f2f2',
+  background-purple: '#a586fe',
+  text-white: #fff,
+  text-label: '#CCCCCC',
+  text-color: '#2E260A',
+  text-grey: #808080,
+  text-grey-25: #fcfcfd,
+  text-grey-200: #fcfcfd,
+  text-grey-300: #d0d5dd,
+  text-grey-400: #98a2b3,
+  text-grey-500: #667085,
+  text-grey-600: #475467,
+  text-grey-700: #344054,
+  text-grey-800: #1d2939,
+  text-grey-900: #101828,
+  text-default: #cccccc,
+
+  text-pagination: '#616161',
+  text-desc: #98a2b3,
+  text-title: #fcfcfd,
+  text-title-2: #f2f4f7,
+  text-suffix-input-active: #8cb4ff,
+  text-suffix-input-inactive: #475467,
+  text-purple: #a586fe,
+  border-primary: #344054,
+  green-primary: #30d158,
+  error-primary: #e9453a,
+  warning-600: #dc6803,
+  purple-600: #7f56d9,
+);
+
+$fontSizes: (
+  heading-block: (
+    xs: 20px,
+    sm: 20px,
+    lg: 24px,
+    xl: 24px,
+  ),
+  number-primary: (
+    xs: 18px,
+    sm: 18px,
+    lg: 24px,
+    xl: 24px,
+  ),
+);
+
+$colors-dark: (
+  primary: #dcf537,
+  background-primary: #252525,
+  background-secondary: #1d1d1d,
+);
+
+:root {
+  /*Begin color*/
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+
+  /*End color*/
+
+  /*Begin padding*/
+  @each $name, $font-size in $fontSizes {
+    // maps require a second loop
+    @if type-of($font-size) == 'map' {
+      // each item in sub map
+      @each $subname, $sub-font-size in $font-size {
+        // --z-index-viewport-md
+        --font-size-#{$name}-#{$subname}: #{$sub-font-size};
+      }
+
+      // top-level z-indexs
+    } @else if type-of($font-size) == 'number' {
+      // --z-index-background
+      --font-size-#{$name}: #{$font-size};
+    }
+  }
+
+  /*End padding*/
+}
+
+[data-theme='dark'] {
+  @each $name, $color in $colors-dark {
+    --color-#{$name}: #{$color};
+  }
+}
+
+//End variable root
+/* ==========================================================================
+   # END VARIABLE SETTING
+   ==========================================================================
+*/

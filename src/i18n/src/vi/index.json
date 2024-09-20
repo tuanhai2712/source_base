@@ -1,0 +1,103 @@
+{
+  "logoutComfirm": "Xác nhận đăng xuất",
+  "doYouWantToLogout": "Bạn có muốn đăng xuất không?",
+  "accept": "Xác nhận",
+  "refuse": "Từ chối",
+  "accountInformation": "Thông tin tài khoản",
+  "changeInformation": "Thay đổi thông tin",
+  "logout": "Đăng xuất",
+  "signin": "Đăng nhập",
+  "changePassword": "Đổi mật khẩu",
+  "cancel": "Hủy",
+  "save": "Lưu",
+  "update": "Cập nhật",
+  "confirmDeletion": "Xác nhận xóa",
+  "doYouWantToDeleteTheRecord": "Bạn có muốn xóa bản ghi không?",
+  "recoveryCode": "Mã phục hồi",
+  "enterThe6DigitCodeSentToYourEmail": "Nhập mã 6 chữ số được gửi đến email của bạn",
+  "otpCodeHasToBeANumber.": "Mã OTP phải là số.",
+  "resendCode": "Gửi lại mã",
+  "submit": "Nộp",
+  "forgotYourPassword?": "Quên mật khẩu ?",
+  "register": "Đăng kí",
+  "enterEmail": "Nhập Email",
+  "enterUserName": "Nhập Tên tài khoản",
+  "enterFullName": "Nhập Tên đầy đủ",
+  "enterPhoneNumber": "Nhập Số điện thoại",
+  "enterPassword": "Nhập Mật khẩu",
+  "pleaseEnterACorrectEmail": "Vui lòng nhập email chính xác",
+  "resetPassword": "Đặt lại mật khẩu",
+  "action": "Hành động",
+  "createNew": "Tạo mới",
+  "viewDetail": "Chi tiết",
+  "edit": "Sửa",
+  "searchByEmail": "Tìm kiếm theo Email",
+  "exportExcel": "Xuất Excel",
+  "exportPdf": "Xuất PDF",
+  "userInformation": "Thông tin người dùng",
+  "password": "Mật khẩu",
+  "comfirmPassword": "Xác nhận mật khẩu",
+  "all": "Tất cả",
+  "choseAll": "Chọn tất cả",
+  "no.": "STT",
+  "time": "Thời gian",
+  "day": "Ngày",
+  "search": "Tìm kiếm",
+  "clear": "Loại bỏ",
+  "searchKeywords": "Từ khóa tìm kiếm",
+
+  "profile": {
+    "profileInformation": "Thông tin hồ sơ",
+    "editProfile": "Sửa thông tin hồ sơ"
+  },
+
+  "user": {
+    "userList": "Danh sách người dùng",
+    "userName": "Tên tài khoản",
+    "fullName": "Tên đầy đủ",
+    "email": "Email",
+    "superAdmin": "Quản trị viên",
+    "phoneNumber": "Số điện thoại",
+    "oldPassWord": "Mật khẩu cũ",
+    "newPassword": "Mật khẩu mới",
+    "comfirmNewPassword": "Xác nhận mật khẩu mới",
+    "theNewPasswordIsDifferentFromTheOldPassword": "Mật khẩu mới phải khác với mật khẩu cũ",
+    "confirmPasswordNotMatch": "Xác nhận mật khẩu không khớp",
+    "theInputIsNotValidPassword": "Mật khẩu không hợp lệ",
+    "userNameCannotContainSpecialCharaters": "Tên tài khoản không được chứa ký tự đặc biệt"
+  },
+
+  "role": {
+    "nameROle": "Tên quyền",
+    "description": "Mô tả",
+    "roleList": "Danh sách quyền",
+    "searchByName": "Tìm kiếm theo tên quyền"
+  },
+
+  "log": {
+    "path": "Đường dẫn",
+    "requestBody": "Yêu cầu",
+    "token": "Token",
+    "userName": "Tên người dùng",
+    "message": "Nội dung",
+    "exception": "Ngoại lệ",
+    "requestDetails": "Chi tiết yêu cầu",
+    "method": "Phương pháp",
+    "statusCode": "Mã trạng thái"
+  },
+
+  "route": {
+    "dashboard": "Bảng điều khiển",
+    "systemManagement": "Quản lý hệ thống",
+    "userManagement": "Quản lý người dùng",
+    "roleManagement": "Quản lý vai trò",
+    "logManagement": "Quản lý log",
+    "systemLog": "Log hệ thống",
+    "internalLog": "Log nội bộ"
+  },
+
+  "error": {
+    "thisFieldIsRequired": "Trường này là bắt buộc",
+    "theInputIsNotValid": "Đầu vào không hợp lệ"
+  }
+}

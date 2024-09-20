@@ -1,0 +1,23 @@
+.main-content-index {
+  height: 100vh;
+  .ant-layout-content {
+    padding: 16px;
+    overflow-y: auto;
+    @include customScrollTrack(8px, color(background-secondary), 4px);
+  }
+  .main-page-index {
+    &__box-filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__left {
+        display: flex;
+        gap: 16px;
+      }
+      &__right {
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+}

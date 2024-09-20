@@ -1,0 +1,39 @@
+/* ==========================================================================
+   # START FUNCTION SETTING
+   ==========================================================================
+*/
+
+/*Start build Color*/
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+/*End build Color*/
+
+/*Start map_get variable css*/
+@function get-map($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+/*Start build font size*/
+@function fontSize($font-size, $font-size-variant: null) {
+  // z-index variant is optional
+  @if ($font-size-variant !=null) {
+    // map inception, need two names
+    @return var(--font-size-#{$font-size}-#{$font-size-variant});
+  } @else {
+    // single-level z-index, one name
+    @return var(--font-size-#{$font-size-variant});
+  }
+}
+
+/*End map_get variable css*/
+
+/* ==========================================================================
+   # END FUNCTION SETTING
+   ==========================================================================
+*/

@@ -1,0 +1,16 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  SRC_PATH: .
+  DOCKERFILE_PATH: .devops/1-build
+  VALUESFILE_PATH: .devops/2-deploy
+
+  NAMESPACE_DEV: 24-flamingo-bds
+  KUBE_INGRESS_BASE_DOMAIN_DEV: dev.3si.vn
+  KUBE_INGRESS_BASE_DOMAIN_STG: stg.3si.vn
+  WEB_DOMAIN: 24-flamingo-bds
+
+include:
+    - local: .devops/0-cicd/flamingo-bds-fe.yml

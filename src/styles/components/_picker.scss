@@ -1,0 +1,70 @@
+.main-picker {
+  &__view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px 10px 12px;
+    border-radius: 8px;
+    gap: 12px;
+    background: #1d2939;
+    .view-item {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .react-datepicker {
+    background-color: transparent;
+    border: unset;
+    width: 100%;
+    &__day-name {
+      width: 2.5rem;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #667085;
+    }
+    &__day {
+      width: 2.5rem;
+      color: #fafaff;
+    }
+    &__day:hover {
+      background-color: #bad9f1 !important;
+    }
+    &__header {
+      background-color: transparent;
+      border: unset;
+    }
+    &__current-month {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #fafaff;
+    }
+    &__navigation {
+      top: 6px;
+    }
+    &__month {
+      &-container {
+        width: 100%;
+      }
+      &-text {
+        color: #fafaff;
+        &--selected {
+          background-color: #216ba5;
+        }
+        &--disabled {
+          color: color(text-grey-400);
+        }
+      }
+      &-text:hover {
+        background-color: #bad9f1;
+      }
+    }
+  }
+}

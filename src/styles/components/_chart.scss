@@ -1,0 +1,98 @@
+.xasix-chart-area {
+  fill: color(text-grey);
+  @include respond-down(sm) {
+    font-size: 11px;
+  }
+}
+.apexcharts-yaxis-label {
+  @include respond-down(sm) {
+    font-size: 11px;
+  }
+}
+#chartContainer .apexcharts-tooltip {
+  color: color(text-color);
+  background-color: red;
+}
+
+#chartContainer .apexcharts-tooltip .apexcharts-tooltip-series-group.active {
+  background: color(background-secondary-bold) !important;
+}
+.apexcharts-tooltip.apexcharts-theme-light {
+  background: #a586fe !important;
+  border: none !important;
+  color: color(primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  display: none;
+}
+.apexcharts-xaxistooltip,
+.apexcharts-yaxistooltip {
+  background: color(primary) !important;
+}
+.apexcharts-xaxistooltip {
+  display: none;
+  &::before,
+  &::after {
+    border: none !important;
+  }
+  &-text {
+    font-weight: 600;
+  }
+}
+.apexcharts-grid {
+  line {
+    stroke: color(border-primary);
+  }
+}
+
+.main-chart-area {
+  background-color: #000;
+  border-radius: 8px;
+  &.hide-grid {
+    .apexcharts-grid {
+      line {
+        stroke: none !important;
+      }
+    }
+  }
+  .apexcharts-yaxis-label,
+  .apexcharts-xaxis-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    fill: color(text-grey-400);
+  }
+}
+
+.main-chart-donut-tooltip {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: color(text-grey-25);
+  padding: 2px;
+}
+
+.apexcharts-grid-borders {
+  line {
+    stroke: #1d2939 !important;
+  }
+}
+
+.apexcharts-tooltip-series-group {
+  padding: unset !important;
+}
+
+.apexcharts-tooltip-text-y-value {
+  font-size: 14px;
+  margin: unset !important;
+}

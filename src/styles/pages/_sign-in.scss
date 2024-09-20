@@ -1,0 +1,83 @@
+.signin-page {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  .signin-form {
+    width: 450px;
+    height: 420px;
+    padding: 40px 32px 40px 32px;
+    border: transparent solid 3px;
+    background: linear-gradient(#101828 0 0) padding-box,
+      linear-gradient(180.18deg, rgba(25, 104, 255, 0.5) 50%, rgba(25, 104, 255, 0) 90%) border-box;
+    border-color: transparent;
+    border-radius: 20px;
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: color(text-title);
+    }
+
+    &-btn_submit {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0em;
+      width: 100%;
+      gap: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: color(text-white);
+      margin-top: 20px;
+    }
+    &-forgot_text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: color(text-purple);
+    }
+    &-resend_active {
+      color: color(text-suffix-input-active) !important;
+    }
+    &-resend_inactive {
+      color: color(text-suffix-input-inactive) !important;
+    }
+    .ant-input,
+    .ant-input-password {
+      background-color: color(background-secondary);
+      color: color(text-white);
+    }
+    .ant-input-password-icon.anticon {
+      color: color(text-grey);
+      svg {
+        path {
+          fill: color(text-grey);
+        }
+      }
+      &.anticon-eye {
+        svg {
+          path {
+            &:nth-child(2) {
+              fill: transparent;
+            }
+          }
+        }
+      }
+      &:hover {
+        color: color(text-grey);
+      }
+    }
+    .ant-btn-primary[disabled],
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary[disabled]:hover {
+      background: #4d4d4d;
+      border: 1px solid #0000;
+      color: var(--color-text-grey);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+  /* Tùy chỉnh văn bản của task */
+  .gantt_task_text {
+    color: #0000ff; /* Đổi màu văn bản thành xanh dương */
+    font-weight: bold; /* Đổi kiểu chữ thành đậm */
+  }
+  
+  /* Tùy chỉnh lớp CSS cho các task tùy chỉnh */
+  .custom-class {
+    background-color: #ffcc00; /* Ví dụ về lớp tùy chỉnh */
+  }
+
+  /* Tùy chỉnh thanh Task */
+  .gantt_task_line {
+    border-radius: 5px !important;
+  }
+
+  /* Mầu Task */
+  .color-task-custom {
+    background-color: #ff0000; /* Màu nền nhạt cho độ ưu tiên cao */
+    border: 2px solid #ff0000; /* Đường viền đỏ cho độ ưu tiên cao */
+  }
+
+  .color-task-custom .gantt_task_progress {
+    background-color: #ff4c4c !important; /* Màu đỏ cho thanh tiến trình độ ưu tiên cao */
+  }
+  
+  .button-toolbar {
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }

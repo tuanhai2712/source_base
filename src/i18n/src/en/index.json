@@ -1,0 +1,103 @@
+{
+  "logoutComfirm": "Logout Confirmation",
+  "doYouWantToLogout": "Do you want to log out?",
+  "accept": "Accept",
+  "refuse": "Refuse",
+  "accountInformation": "Account Information",
+  "changeInformation": "Change Information",
+  "logout": "Logout",
+  "signin": "Sign In",
+  "changePassword": "Change Password",
+  "cancel": "Cancel",
+  "save": "Save",
+  "update": "Update",
+  "confirmDeletion": "Confirm Deletion",
+  "doYouWantToDeleteTheRecord": "Do you want to delete the record?",
+  "recoveryCode": "Recovery Code",
+  "enterThe6DigitCodeSentToYourEmail": "Enter the 6-digit code sent to your email",
+  "otpCodeHasToBeANumber.": "OTP code must be a number.",
+  "resendCode": "Resend Code",
+  "submit": "Submit",
+  "forgotYourPassword?": "Forgot your password?",
+  "register": "Register",
+  "enterEmail": "Enter Email",
+  "enterUserName": "Enter User name",
+  "enterFullName": "Enter Full name",
+  "enterPhoneNumber": "Enter Phone number",
+  "enterPassword": "Enter Password",
+  "pleaseEnterACorrectEmail": "Please enter a correct email",
+  "resetPassword": "Reset Password",
+  "action": "Action",
+  "createNew": "Create New",
+  "viewDetail": "View Detail",
+  "edit": "Edit",
+  "searchByEmail": "Search by Email",
+  "exportExcel": "Export Excel",
+  "exportPdf": "Export PDF",
+  "userInformation": "User Information",
+  "password": "Password",
+  "comfirmPassword": "Confirm Password",
+  "all": "All",
+  "choseAll": "Select All",
+  "no.": "No.",
+  "time": "Time",
+  "day": "Day",
+  "search": "Search",
+  "clear": "Clear",
+  "searchKeywords": "Search Keywords",
+
+  "profile": {
+    "profileInformation": "Profile Information",
+    "editProfile": "Edit Profile Information"
+  },
+
+  "user": {
+    "userList": "User List",
+    "userName": "Username",
+    "fullName": "Full Name",
+    "email": "Email",
+    "superAdmin": "Super Admin",
+    "phoneNumber": "Phone Number",
+    "oldPassWord": "Old Password",
+    "newPassword": "New Password",
+    "comfirmNewPassword": "Confirm New Password",
+    "theNewPasswordIsDifferentFromTheOldPassword": "The new password must be different from the old password",
+    "confirmPasswordNotMatch": "Confirm password does not match",
+    "theInputIsNotValidPassword": "The input is not a valid password",
+    "userNameCannotContainSpecialCharaters": "Username cannot contain special characters"
+  },
+
+  "role": {
+    "nameROle": "Role Name",
+    "description": "Description",
+    "roleList": "Role List",
+    "searchByName": "Search by Role Name"
+  },
+
+  "log": {
+    "path": "Path",
+    "requestBody": "Request Body",
+    "token": "Token",
+    "userName": "Username",
+    "message": "Message",
+    "exception": "Exception",
+    "requestDetails": "Request Details",
+    "method": "Method",
+    "statusCode": "Status Code"
+  },
+
+  "route": {
+    "dashboard": "Dashboard",
+    "systemManagement": "System Management",
+    "userManagement": "User Management",
+    "roleManagement": "Role Management",
+    "logManagement": "Log Management",
+    "systemLog": "System Log",
+    "internalLog": "Internal Log"
+  },
+
+  "error": {
+    "thisFieldIsRequired": "This field is required",
+    "theInputIsNotValid": "The input is not valid"
+  }
+}

@@ -1,0 +1,15 @@
+.btn-export {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: #c6dd32;
+  }
+  &:active,
+  :focus {
+    background-color: #b0c42c;
+  }
+}

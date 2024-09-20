@@ -1,0 +1,11 @@
+.mix-title-index {
+  display: flex;
+  gap: 4px;
+  &__title {
+    font-weight: 500;
+  }
+  &__required {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+.page-title-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  .title {
+    color: color(text-grey-900);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    @include respond-down(sm) {
+      font-size: fontSize(heading-block, sm);
+    }
+  }
+}

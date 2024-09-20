@@ -1,0 +1,190 @@
+.main-page-dashboard {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      .code {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: color(text-grey-400);
+      }
+      > svg {
+        cursor: pointer;
+      }
+    }
+  }
+  .filter-selected-items {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    gap: 6px;
+    &__label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: color(text-grey-400);
+    }
+    &__option {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: color(text-grey-25);
+    }
+  }
+  .card-item {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 20px;
+    background: color(background-secondary);
+    border: 1px solid #344054;
+    &__title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #98a2b3;
+      display: flex;
+      gap: 6px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__total-text {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fcfcfd;
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .growth-rate {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+      }
+      .increase {
+        color: #32d583;
+        > svg {
+          transform: rotate(180deg);
+          > path {
+            fill: #32d583;
+          }
+        }
+      }
+      .reduce {
+        color: #f04438;
+        > svg {
+          > path {
+            fill: #f04438;
+          }
+        }
+      }
+    }
+
+    &__chart {
+      border-radius: 8px;
+      background: #000;
+      min-height: 270px;
+      &-title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: color(text-grey-400);
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+      &-total-text {
+        font-size: 16px;
+        color: color(text-white);
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 6px;
+      }
+    }
+    &__quick-filter {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      &-active {
+        padding: 4px 8px 4px 8px;
+        border-radius: 8px;
+        gap: 10px;
+        background: color(text-grey-900);
+        color: color(text-white);
+        cursor: pointer;
+      }
+      &-inactive {
+        padding: 4px 8px 4px 8px;
+        border-radius: 8px;
+        gap: 10px;
+        border: 1px solid color(text-grey-700);
+        color: color(text-grey-600);
+        cursor: pointer;
+      }
+    }
+    .item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      .item-text {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: color(text-grey-400);
+      }
+      .item-amount {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: color(text-grey-25);
+      }
+      .item-color {
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
